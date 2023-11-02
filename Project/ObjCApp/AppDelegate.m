@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 
+@import SwiftFramework;
+
 @interface AppDelegate ()
 
 @end
@@ -7,6 +9,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    TheStuff *theStuff = [[TheStuff alloc] init];
+    [theStuff doTheStuff];
+    
     return YES;
 }
 
